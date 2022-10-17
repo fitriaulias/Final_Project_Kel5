@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import indonesiaSlice from '../features/indonesiaSlice';
+import indonesiaSlice from '../features/Indonesia/indonesiaSlice';
 import logger from 'redux-logger';
 
 export const store = configureStore({
