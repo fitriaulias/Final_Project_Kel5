@@ -1,22 +1,32 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchIndonesia } from './indonesiaSlice';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Pagination from '../Pagination';
 
 
 const IndonesiaNews = () => {
     const allNewsIndonesia = useSelector((state) => state.indonesia.indonesiaState);
     const dispatch = useDispatch();
+
+    //pagination
+    const [ currentPage, setCurrentPage ] = useState(1)
     
     useEffect(() => {
         dispatch(fetchIndonesia())
-    })
-    
+    }, [dispatch])
+
+    const postPerPage = 40; // atur sesuai keinginan
+    const totalNews = allNewsIndonesia.length
+    const lastPostIndex = currentPage * postPerPage
+    const firstPostIndex = lastPostIndex - postPerPage
+    const filterAllNewsIndonesia = allNewsIndonesia.slice(firstPostIndex, lastPostIndex)
+
     return (
         <div className='container'>
-            <h1>Post</h1>
-           
-            {
-                    allNewsIndonesia.map((news, index) => (
+            <h1>Post Indonesia</h1>
+            <div>
+                {
+                    filterAllNewsIndonesia.map((news, index) => (
                     <div key={index}>
                         <p>{news.title}</p>
                         <p>{news.author}</p>
@@ -26,10 +36,13 @@ const IndonesiaNews = () => {
                    </div>
                     ))
                 }
-              
-          
-                
-                
+            </div>
+            <div>
+                <Pagination currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                totalNews={totalNews}
+                postPerPage={postPerPage} />
+            </div>
         </div>
     )
 }
