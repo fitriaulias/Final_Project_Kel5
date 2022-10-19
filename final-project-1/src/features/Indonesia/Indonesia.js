@@ -29,6 +29,9 @@ const IndonesiaNews = () => {
                     filterAllNewsIndonesia.map((news, index) => (
                     <div key={index}>
                         <p>{news.title}</p>
+                        <a href={news.url}>
+                            <button>News Detail</button>
+                        </a>
                         <p>{news.author}</p>
                         <p>{news.publishedAt}</p>
                         <p>{news.description}</p>
