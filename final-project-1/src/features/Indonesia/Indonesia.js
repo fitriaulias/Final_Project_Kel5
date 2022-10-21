@@ -29,7 +29,7 @@ const IndonesiaNews = () => {
                     filterAllNewsIndonesia.map((news, index) => (
                     <div key={index}>
                         <p>{news.title}</p>
-                        <a href={news.url}>
+                        <a href={news.url} target="_blank" rel="noopener noreferrer">
                             <button>News Detail</button>
                         </a>
                         <p>{news.author}</p>

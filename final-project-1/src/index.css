@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navigation {
+  background-color: white;
+}
+
+.brand-image {
+    width: 1.5em !important;
+}
+
+.sidebar-left {
+  background: white;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  overflow-y: auto;
+  border-right: 1px solid lightgray;
+  text-align: center;
+}
+
+.sidebar-content {
+  /* margin-left: 0; */
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.page-content {
+  margin: 3px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 2px solid #495057;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.page-content:hover {
+  background-color: black;
+  color: white;
+}
