@@ -22,8 +22,7 @@ const IndonesiaNews = () => {
     const filterAllNewsIndonesia = allNewsIndonesia.slice(firstPostIndex, lastPostIndex)
 
     return (
-        <div className='container'>
-            <h1>Post Indonesia</h1>
+        <div className='feature-container'>
             <div>
                 {
                     filterAllNewsIndonesia.map((news, index) => (

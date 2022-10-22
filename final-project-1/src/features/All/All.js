@@ -26,13 +26,16 @@ const AllNews = () => {
 
     
     return (
-        <div className='indonesia-container'>
+        <div className='feature-container'>
             <div>
                 { 
                     filterPosts.map((news, index) => (
                     <div key={index} style={{ width: '35rem' }}>
                         <img src={news.urlToImage} alt='indonesia news' />
                         <p>{news.title}</p>
+                        <a href={news.url} target="_blank" rel="noopener noreferrer">
+                            <button>News Detail</button>
+                        </a>
                         <p>{news.author}</p>
                         <p>{news.publishedAt}</p>
                         <p>{news.description}</p>

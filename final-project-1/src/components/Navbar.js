@@ -8,12 +8,12 @@ function Navigation() {
     <div>
         <Navbar className="navigation border-bottom" fixed="top">
             <Container>
-                <Navbar.Brand href="/" className="">
+                <Navbar.Brand href="/">
                     <img src={brand} alt="Home" className="brand-image" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Nav>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/saved">Saved</Nav.Link>
                     </Nav>
                 
