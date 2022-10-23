@@ -1,4 +1,4 @@
-const ButtonDirect = ({ children, href, ...props }) => {
+const DirectButton = ({ children, href, ...props }) => {
 	const className = 'container';
 
 	if (href) {
@@ -16,4 +16,4 @@ const ButtonDirect = ({ children, href, ...props }) => {
 	);
 };
 
-export default ButtonDirect;
+export default DirectButton;

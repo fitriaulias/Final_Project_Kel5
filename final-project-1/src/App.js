@@ -9,6 +9,7 @@ import CovidNews from './pages/Covid/Covid';
 import ProgrammingNews from './pages/Programming/Programming';
 import Saved from './pages/Saved/Saved'
 import AboutUs from './pages/AboutProgress/AboutUs';
+import Footer from './components/footerSection/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/saved" element={<Saved/>} />
         <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

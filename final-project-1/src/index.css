@@ -29,8 +29,7 @@ code {
 
 .feature-container {
   width: 500px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
 
 .sidebar-content {
@@ -182,6 +181,13 @@ code {
   text-align: center;
 }
 
-
+.main-footer {
+  z-index: 2;
+  background-color: white;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
 
