@@ -1,16 +1,28 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navbar';
+import SidebarLeft from './components/SidebarLeft';
+import SidebarRight from './components/SidebarRight';
+import AllNews from './features/All/All';
 import IndonesiaNews from './features/Indonesia/Indonesia';
-import AboutProgress from './pages/AboutProgress/AboutProgress';
+import CovidNews from './pages/Covid/Covid';
+import ProgrammingNews from './pages/Programming/Programming';
+import Saved from './pages/Saved/Saved'
+import AboutUs from './pages/AboutProgress/AboutUs';
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
+      <SidebarLeft/>
+      <SidebarRight />
       <Routes>
+        <Route path="/all" element={<AllNews />} />
         <Route path="/" element={<IndonesiaNews />} />
-        <Route path="/about" element={<AboutProgress />} />
+        <Route path="/programming" element={<ProgrammingNews />} />
+        <Route path="/covid19" element={<CovidNews />} />
+        <Route path="/saved" element={<Saved/>} />
+        <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
     </div>
   );

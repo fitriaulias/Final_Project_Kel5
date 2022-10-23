@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchIndonesia } from './indonesiaSlice';
 import { useEffect, useState } from 'react';
 import Pagination from '../Pagination';
+import saveIco from '../../assets/archive-add.svg'
 
 
 const IndonesiaNews = () => {
@@ -22,31 +23,36 @@ const IndonesiaNews = () => {
     const filterAllNewsIndonesia = allNewsIndonesia.slice(firstPostIndex, lastPostIndex)
 
     return (
-        <div className='container'>
-            <h1>Post Indonesia</h1>
-            <div>
+        <>
+            <div className='feature-content'>
                 {
                     filterAllNewsIndonesia.map((news, index) => (
-                    <div key={index}>
-                        <p>{news.title}</p>
-                        <a href={news.url}>
-                            <button>News Detail</button>
+                    <div key={index} className="card-feature-content">
+                        <a href={news.url} className="top-card">
+                            <div className="left-top-card">
+                                <p>{news.source.name}</p>
+                                <div className='title'>{news.title}</div>
+                                <p>{news.description}</p>
+                            </div>
+                            <div className="right-top-card">
+                                <img src={news.urlToImage} alt="indonesian news"/>
+                            </div>
                         </a>
-                        <p>{news.author}</p>
-                        <p>{news.publishedAt}</p>
-                        <p>{news.description}</p>
-                        <img src={news.urlToImage} alt='indonesia news' />
+                        <div className='bottom-card'>
+                            <p>{news.source.name}<span> • {news.publishedAt}</span></p>
+                            <div><img src={saveIco} alt='Save'/></div>
+                        </div>
                    </div>
                     ))
                 }
             </div>
-            <div>
+            <div className='feature-pagination'>
                 <Pagination currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
                 totalNews={totalNews}
                 postPerPage={postPerPage} />
             </div>
-        </div>
+        </>
     )
 }
 

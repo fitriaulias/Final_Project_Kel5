@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios';
 
 
-const INDONESIA_URL = "https://newsapi.org/v2/everything?q=indonesia&apiKey=f5bf21211b53443993ac8a6834c3ba12" //ganti API Key dengan API Key akunmu
+const INDONESIA_URL = "https://newsapi.org/v2/everything?q=indonesia&apiKey=e3cc0b43bdf04e9dbd8a27da31fbefc2" //ganti API Key dengan API Key akunmu
 
 const initialState = {
     indonesiaState: [],

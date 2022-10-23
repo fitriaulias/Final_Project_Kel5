@@ -1,0 +1,25 @@
+import Layout from '../../components/Layout/Layout';
+import Title from '../../components/Layout/Title'
+import { useSelector } from 'react-redux';
+
+const SavedPage = () => {
+	const savedNews = useSelector(state => state.saved.articles);
+
+	return (
+		<Title title="Saved">
+			<h2>Saved Articles</h2>
+
+			{savedNews.length ? (
+				<div className="container">
+					{savedNews?.map(n => (
+						<Layout key={n.title} news={n} />
+					))}
+				</div>
+			) : (
+				<h3>No saved news.</h3>
+			)}
+		</Title>
+	);
+};
+
+export default SavedPage;
