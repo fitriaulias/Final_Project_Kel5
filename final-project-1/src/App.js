@@ -5,7 +5,8 @@ import SidebarLeft from './components/SidebarLeft';
 import SidebarRight from './components/SidebarRight';
 import AllNews from './features/All/All';
 import IndonesiaNews from './features/Indonesia/Indonesia';
-import AboutProgress from './pages/AboutProgress/AboutProgress';
+// import AboutProgress from './pages/AboutProgress/AboutProgress';
+import AboutUs from './pages/AboutProgress/AboutUs';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/all" element={<AllNews />} />
         <Route path="/" element={<IndonesiaNews />} />
-        <Route path="/aboutus" element={<AboutProgress />} />
+        <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
     </div>
   );

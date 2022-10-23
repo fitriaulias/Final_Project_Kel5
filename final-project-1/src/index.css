@@ -99,3 +99,89 @@ code {
   margin-left: -10px;
   width: 1.5em !important;
 }
+
+.about-us {
+  background-color: white;
+  width: 500px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+
+.about-us-content {
+  display: flex;
+}
+
+.about-us-data {
+  margin-top: 85px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 10px;
+
+}
+
+.about-us-data img {
+  width: 5em;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.about-us-progress {
+  flex: 1;
+  font-family: 'Jost', sans-serif;
+  margin: auto;
+}
+
+.about-progress {
+  background-image: url(./assets/background-image.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.progress-container-one {
+  margin-top: 60px;
+  margin-right: 40px;
+}
+
+.progress-container-two {
+  margin-top: 60px;
+  margin-right: 40px;
+  
+}
+
+.progress-container-three {
+  margin-top: 60px;
+  margin-right: 40px;
+}
+
+.about-us-progress p {
+  border-bottom: #495057 solid 1px;
+}
+
+.about-us-title {
+  padding-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  background-color: white;
+  font-family: 'Jost', sans-serif;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+
