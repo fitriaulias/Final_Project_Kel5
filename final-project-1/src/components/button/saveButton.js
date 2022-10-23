@@ -1,4 +1,4 @@
-const saveButton = ({ onClick, className, children, ...props }) => {
+const SaveButton = ({ onClick, className, children, ...props }) => {
 	return (
 		<button onClick={onClick} className={` ${className}`} {...props}>
 			{children}
@@ -6,4 +6,4 @@ const saveButton = ({ onClick, className, children, ...props }) => {
 	);
 };
 
-export default saveButton;
+export default SaveButton;
