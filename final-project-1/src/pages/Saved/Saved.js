@@ -7,7 +7,7 @@ const SavedPage = () => {
 
 	return (
 		<Title title="Saved">
-			<h2>Saved Articles</h2>
+			<h2>Saved News</h2>
 
 			{savedNews.length ? (
 				<div className="container">
@@ -16,7 +16,7 @@ const SavedPage = () => {
 					))}
 				</div>
 			) : (
-				<h3>No saved news.</h3>
+				<h3>no saved news.</h3>
 			)}
 		</Title>
 	);

@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import savedSlice from '../features/Saved/savedSlice';
+import SavedSlice from '../features/Saved/SavedSlice';
 
 export const store = configureStore({
     reducer: {
-        saved: savedSlice,
+        saved: SavedSlice,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 
