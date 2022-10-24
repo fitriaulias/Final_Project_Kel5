@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SaveIco from '.././assets/archive-add.svg'
 
 function SidebarRight() {
   return (
@@ -9,7 +10,7 @@ function SidebarRight() {
             Ini field buat search
           </div>
           <div className='sidebar-content-click-me'>
-            Ini field buat click me
+            <img src={SaveIco} alt="Click me"/> Click Save! to add news to your reading list
           </div>
           <div className='sidebar-content-about-us'>
           <Link to="/aboutus" className='page-content-about'>About Us</Link>

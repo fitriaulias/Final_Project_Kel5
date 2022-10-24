@@ -18,13 +18,16 @@ const IndonesiaPage = () => {
 	}, []);
 
 	return (
-		<Title title="Indonesia">
-			<section>
-				{news?.map(n => (
-					<Layout news={n} key={n.title} />
-				))}
-			</section>
-		</Title>
+		
+			<Title title="Indonesia">
+				<section>
+					
+						{news?.map(n => (
+							<Layout news={n} key={n.title} />
+						))}
+					
+				</section>
+			</Title>
 	);
 };
 

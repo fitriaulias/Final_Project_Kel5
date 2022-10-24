@@ -18,12 +18,13 @@ code {
 .sidebar-left {
   background: white;
   height: 100%;
-  width: 450px;
+  width: 350px;
   position: fixed;
   z-index: 1;
   overflow-y: auto;
   border-right: 1px solid #BCBCBC;
 }
+
 
 .feature-content, .feature-pagination{
   padding-top: 80px;
@@ -34,8 +35,10 @@ code {
 }
 
 .feature-content > .card-feature-content{
+  margin-left: auto !important;
+  margin-right: auto !important;
   border-bottom: 1px solid #BCBCBC;
-  width: 900px!important;
+  width: 700px!important;
   padding: 0 15px;
   margin-bottom: 20px;
 }
@@ -94,7 +97,7 @@ code {
 }
 
 .sidebar-content {
-  margin-left: 130px;
+  margin-left: 90px;
   margin-top: 100px;
 }
 
@@ -123,7 +126,7 @@ code {
 
 .sidebar-right {
   height: 100%;
-  width: 450px;
+  width: 350px;
   position: fixed;
   top: 0;
   right: 0;
@@ -136,6 +139,10 @@ code {
   margin-top: 100px;
   margin-left: 25px;
   margin-right: 130px;
+}
+
+.sidebar-content-click-me {
+  padding-top: 20px;
 }
 
 .sidebar-content-about-us {
@@ -245,10 +252,10 @@ code {
 .main-footer {
   z-index: 2;
   background-color: white;
-  padding-top: 3em;
+  padding-top: 2em;
   position: relative;
   bottom: 0;
   width: 100%;
+  border-top: lightgray 1px solid;
 }
-
 

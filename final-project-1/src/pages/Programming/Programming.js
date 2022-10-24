@@ -20,9 +20,11 @@ const ProgrammingPage = () => {
 	return (
 		<Title title="Programming">
 			<section>
+				
 				{news?.map(n => (
 					<Layout news={n} key={n.title} />
 				))}
+				
 			</section>
 		</Title>
 	);

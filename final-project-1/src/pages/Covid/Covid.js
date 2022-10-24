@@ -20,9 +20,11 @@ const CovidPage = () => {
 	return (
 		<Title title="Covid-19">
 			<section>
+				
 				{news?.map(n => (
 					<Layout news={n} key={n.title} />
 				))}
+				
 			</section>
 		</Title>
 	);
