@@ -6,7 +6,7 @@ function SidebarRight() {
       <div className='sidebar-right'>
         <div className='sidebar-right-content'>
           <div className='sidebar-content-search'>
-            Ini field buat search
+            <input type="text" placeholder="Search article here..."></input>
           </div>
           <div className='sidebar-content-click-me'>
             Ini field buat click me
