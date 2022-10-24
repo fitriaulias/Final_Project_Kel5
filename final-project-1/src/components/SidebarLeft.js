@@ -7,7 +7,7 @@ function SidebarLeft() {
         <div className='sidebar-content'>
           <div className='sidebar-content-first-row'>
             <Link to="/all" className='page-content'>All</Link>
-            <Link to="/" className='page-content'>Indonesia</Link>
+            <Link to="/" className='page-content active'>Indonesia</Link>
           </div>
           <div className='sidebar-content-second-row'>
             <Link to="/programming" className='page-content'>Programming</Link>
