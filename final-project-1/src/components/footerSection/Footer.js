@@ -13,18 +13,18 @@ function Footer() {
 
           <div className="col">
             <h5>Resources</h5>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>Articles</li>
               <li>FAQs</li>
-            </ui>
+            </ul>
           </div>
 
           <div className="col">
             <h5>Company</h5>
-            <ui className="list-unstyled">
+            <ul className="list-unstyled">
               <li>About Us</li>
               <li>Contact Us</li>
-            </ui>
+            </ul>
           </div>
         </div>
         <hr />

@@ -30,7 +30,7 @@ const Layout = ({ news }) => {
 					>
 						Read More
 					</DirectButton>
-					<img src={SaveIco} alt="Save"/>
+					{/* <img src={SaveIco} alt="Save"/> */}
 					<SaveButton
 						onClick={() => dispatch(savedNews(news))}
 					>
