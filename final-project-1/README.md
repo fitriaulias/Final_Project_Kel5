@@ -7,15 +7,39 @@
   <h3 align="center">NewsInd</h3>
 
   <p align="center">
-    NewsInd is a web application that will provide you many news informations. This application have four different categories of news which are **Indonesia**, **Programming**, **Covid-19**, and **All** that's show top headlines in Indonesia.
+    NewsInd adalah aplikasi berbasis web yang menyediakan beragam kumpulan informasi berita dari berbagai kategori, diantaranya yaitu Indonesia, Programming, Covid-19, dan All. Fitur utama yang disediakan oleh NewsInd adalah aplikasi ini dapat menyimpan berita terpilih untuk dibaca kembali oleh pengguna.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/fitriaulias/Final_Project_Kel5/tree/main/final-project-1"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <p>Final Project 1 oleh Kelompok 5</p>
   </p>
 </div>
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Daftar Isi</summary>
+  <ol>
+    <li>
+      <a href="#mentoring-status">Status Mentoring</a>
+    </li>
+    <li>
+      <a href="#about-the-project">Siapakah Kami?</a>
+    </li>
+    <li>
+      <a href="#about-the-project">Tentang Project</a>
+      <ul>
+        <li><a href="#built-with">Frameworks/Libraries</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Instalasi Aplikasi</a></li>
+        <li><a href="#usage">Cara Penggunaan Aplikasi</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
