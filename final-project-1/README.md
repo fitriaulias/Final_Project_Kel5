@@ -82,12 +82,13 @@ Fitur yang tersedia di NewsInd:
 
 <br/>
 
-### Frameworks/Libraries
+### Frameworks/Libraries/Tools
 
-Daftar Frameworks/libraries yang kami gunakan:
+Daftar Frameworks/libraries/Tools yang kami gunakan:
 
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* React
+* Figma
+* React Redux
 
 <br/>
 
@@ -150,9 +151,9 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 <br/>
 
 ## Presentasi
-1. PowerPoint
-2. Desain Mockup di Figman
-3. Management progress member di Notion
+1. PowerPoint di [canva](https://www.canva.com/design/DAFPxBMLz8g/yP8sko9_iKgDhuUdJZU-Sg/view?utm_content=DAFPxBMLz8g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+2. Desain Mockup di [Figma](https://www.figma.com/proto/mUE81XMrbLNoT2WwraYSzE/Final-Project-1?node-id=22%3A329&scaling=scale-down&page-id=0%3A1&starting-point-node-id=22%3A329)
+3. Management progress member di [Notion](https://www.notion.so/Final-Project-1-f6a9aa83ccd148219bbf4e36fe946307) 
 4. <details>
     <summary>Coding</summary>
     <ol type="1">
