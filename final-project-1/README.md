@@ -1,4 +1,4 @@
-<h1 align="center">Material Bread</h1>
+<h1 align="center">NewsInd</h1>
 
 # Getting Started with Create React App
 
