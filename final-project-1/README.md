@@ -156,7 +156,7 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 4. <details>
     <summary>Coding</summary>
     <ol>
-    <li>Store</li>
+    <!-- <li>Store</li>
     <li>Layout</li>
     <li>Indonesia</li>
     <li>All</li>
@@ -165,7 +165,8 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
     <li>Covid-19</li>
     <li>Programming</li>
     <li>Save feature</li>
-    <li>Search feature</li>
+    <li>Search feature</li> -->
+    * Test
     </ol>
     </details>
 5. Demo aplikasi
