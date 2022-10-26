@@ -155,7 +155,7 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 3. Management progress member di Notion
 4. <details>
     <summary>Coding</summary>
-    <ol>
+    <ol type="1">
         <li>Store</li>
         <li>Layout</li>
         <li>Indonesia</li>
