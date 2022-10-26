@@ -19,6 +19,9 @@ const CovidPage = () => {
 
 	return (
 		<Title title="Covid-19">
+			<div className='category-title'>
+				<h2>Covid-19</h2>
+			</div>
 			<section>
 				
 				{news?.map(n => (

@@ -20,6 +20,9 @@ const IndonesiaPage = () => {
 	return (
 		
 			<Title title="Indonesia">
+				<div className='category-title'>
+					<h2>Indonesia</h2>
+				</div>
 				<section>
 					
 						{news?.map(n => (

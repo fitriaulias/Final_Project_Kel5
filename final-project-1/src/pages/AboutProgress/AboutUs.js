@@ -16,6 +16,7 @@ function AboutUs() {
             </div>
             <div className='about-us-progress'>
                 <div className='progress-container-one'>
+                    <p>Layout</p>
                     <p>Programming section</p> 
                     <p>Covid-19 section</p>
                     <p>Saved feature</p>
@@ -35,7 +36,7 @@ function AboutUs() {
             <div className='about-us-progress'>
                 <div className='progress-container-two'>
                     <p>Mockup</p> 
-                    <p>Card</p>
+                    <p>Styling Layout</p>
                     <p>Search feature</p>
                 </div>
             </div>
@@ -55,8 +56,7 @@ function AboutUs() {
                     <p>Store</p>
                     <p>Indonesia section</p>
                     <p>All section</p>
-                    <p>Navbar</p>
-                    <p>Sidebar</p>
+                    <p>Navbar-sidebar</p>
                     <p>About section</p>
                 </div>
             </div>

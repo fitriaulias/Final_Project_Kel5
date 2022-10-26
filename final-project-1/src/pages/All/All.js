@@ -19,6 +19,9 @@ const AllPage = () => {
 
 	return (
 		<Title title="All">
+			<div className='category-title'>
+				<h2>All</h2>
+			</div>
 			<section>
 				{news?.map(n => (
 					<Layout news={n} key={n.title} />

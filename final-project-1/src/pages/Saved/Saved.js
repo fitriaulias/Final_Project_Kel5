@@ -16,7 +16,7 @@ const SavedPage = () => {
 					))}
 				</div>
 			) : (
-				<h3>no saved news.</h3>
+				<h3>Oops! You haven't saved any news.</h3>
 			)}
 		</Title>
 	);

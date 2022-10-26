@@ -19,6 +19,9 @@ const ProgrammingPage = () => {
 
 	return (
 		<Title title="Programming">
+			<div className='category-title'>
+				<h2>Programming</h2>
+			</div>
 			<section>
 				
 				{news?.map(n => (
