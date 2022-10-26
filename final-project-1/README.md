@@ -20,7 +20,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary> :bookmark_tabs: Daftar Isi</summary>
+  <summary>Daftar Isi</summary>
   <ol>
     <li>
       <a href="#mentoring-status">Status Mentoring</a>
@@ -42,17 +42,16 @@
       </ul>
     </li>
     <li><a href="#presentasi">Presentasi</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 <br/>
 
 <!-- STATUS MENTORING -->
-## :heavy_check_mark: Status Mentoring 
+## Status Mentoring 
 Mentoring **telah dilaksanakan** pada:
-:date: Tanggal dan waktu: 24 Oktober 2022, 10.00 WIB
-Instruktur: Pak Arif Setiawan
+* :date: Tanggal dan waktu: 24 Oktober 2022, 10.00 WIB
+* Instruktur: Pak Arif Setiawan
 
 <br/>
 
@@ -65,7 +64,7 @@ Instruktur: Pak Arif Setiawan
 <br/>
 
 <!-- ABOUT THE PROJECT -->
-## :newspaper: Tentang Project
+## Tentang Project
 
 <img src="src/assets/tentang-project.png" alt="Logo" align="center">
 
@@ -83,7 +82,7 @@ Fitur yang tersedia di NewsInd:
 
 <br/>
 
-### :books: Frameworks/Libraries
+### Frameworks/Libraries
 
 Daftar Frameworks/libraries yang kami gunakan:
 
@@ -115,7 +114,7 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 
 <br/>
 
-### :information_desk_person: Cara Penggunaan Aplikasi
+### Cara Penggunaan Aplikasi
 
 <details>
     <summary>Mencari berita sesuai kategori</summary>
@@ -147,5 +146,32 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
     <p>Untuk menghapus berita yang telah Anda simpan, cukup tekan tombol UnSave dan berita akan terhapus dari library saved Anda.
     </p>
 </details>
+
+<br/>
+
+## Presentasi
+1. PowerPoint
+2. Desain Mockup di Figman
+3. Management progress member di Notion
+4. <details>
+    <summary>Coding</summary>
+    <ol>
+    <li>Store</li>
+    <li>Layout</li>
+    <li>Indonesia</li>
+    <li>All</li>
+    <li>About Us</li>
+    <li>Reducer</li>
+    <li>Covid-19</li>
+    <li>Programming</li>
+    <li>Save feature</li>
+    <li>Search feature</li>
+    </ol>
+    </details>
+5. Demo aplikasi
+
+<br/>
+
+
 
 
