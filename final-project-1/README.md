@@ -16,6 +16,7 @@
   </p>
 </div>
 
+<br/>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -45,8 +46,7 @@
   </ol>
 </details>
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
-
+<br/>
 
 <!-- STATUS MENTORING -->
 ## :heavy_check_mark: Status Mentoring 
@@ -54,6 +54,7 @@ Mentoring **telah dilaksanakan** pada:
 :date: Tanggal dan waktu: 24 Oktober 2022, 10.00 WIB
 Instruktur: Pak Arif Setiawan
 
+<br/>
 
 <!-- MEMBER GROUP -->
 ## Siapakah Kami?
@@ -61,6 +62,7 @@ Instruktur: Pak Arif Setiawan
 * Dwi Samsiarto (RCTN-KS05-023)
 * Fitri Aulia S. (RCTN-KS05-024)
 
+<br/>
 
 <!-- ABOUT THE PROJECT -->
 ## :newspaper: Tentang Project
@@ -79,6 +81,7 @@ Fitur yang tersedia di NewsInd:
 * Search: Memungkinkan pengguna untuk mencari berita sesuai kata kunci yang diinginkan
 * Saved: Memungkinkan pengguna untuk menyimpan berita terpilih yang hendak dibaca kembali atau menghapus berita dari daftar bacaan
 
+<br/>
 
 ### :books: Frameworks/Libraries
 
@@ -87,11 +90,14 @@ Daftar Frameworks/libraries yang kami gunakan:
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
+<br/>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 Untuk menggunakan aplikasi NewsInd, langkah pertama yang harus dilakukan adalah instalasi aplikasi.
+
+<br/>
 
 ### Instalasi Aplikasi
 
@@ -108,7 +114,34 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
    ```
 4. Memasukkan API Key ke kategori_URL
 
+<br/>
 
 ### :information_desk_person: Cara Penggunaan Aplikasi
 
-<p align="right">(<a href="#readme-top">kembali ke atas</a>)</p>
+<details>
+    <summary>Mencari berita sesuai kategori</summary>
+    <p>Klik kategori di sidebar sebelah kiri sesuai dengan kategori yang Anda inginkan. Contoh jika Anda ingin melihat berita mengenai Indonesia, maka Anda hanya perlu menekan tombol Indonesia.
+    </p>
+</details>
+<details>
+    <summary>Mencari berita sesuai kata kunci</summary>
+    <p>Untuk mencari berita melalui fitur search, Anda hanya perlu mengetik kata kunci sesuai dengan berita yang Anda cari. Contoh jika Anda ingin mencari berita mengenai React maka ketikkan React dan tekan enter.
+    </p>
+</details>
+<details>
+    <summary>Menyimpan berita terpilih</summary>
+    <p>Untuk menyimpan berita yang hendak Anda baca kembali, tekan tombol Save yang terletak di bagian bawah deskripsi berita.
+    </p>
+</details>
+<details>
+    <summary>Melihat berita yang disimpan</summary>
+    <p>Semua berita yang telah Anda simpan tersimpan di halaman Saved. Untuk membuka kembali berita tersebut Anda hanya perlu menekan tombol Saved di bagian navigasi.
+    </p>
+</details>
+<details>
+    <summary>Menghapus berita yang disimpan</summary>
+    <p>Untuk menghapus berita yang telah Anda simpan, cukup tekan tombol UnSave dan berita akan terhapus dari library saved Anda.
+    </p>
+</details>
+
+
