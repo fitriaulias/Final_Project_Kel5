@@ -7,7 +7,7 @@
   <h3 align="center">NewsInd</h3>
 
   <p align="center">
-    NewsInd is a web application that will provide you many news informations. This application have four different categories of news which are _Indonesia_, _Programming_, _Covid-19_, and _All_ that's show top headlines in Indonesia.
+    NewsInd is a web application that will provide you many news informations. This application have four different categories of news which are **Indonesia**, **Programming**, **Covid-19**, and **All** that's show top headlines in Indonesia.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
