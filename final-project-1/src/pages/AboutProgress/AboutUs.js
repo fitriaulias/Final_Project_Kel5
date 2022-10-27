@@ -11,27 +11,8 @@ function AboutUs() {
             <div className='about-us-content'>
             <div className='about-us-data'>
                 <img src={brand} alt="Brand" />
-                <p>DWI SAMSIARTO</p>
-                <p>RCTN-KS05-022</p>
-            </div>
-            <div className='about-us-progress'>
-                <div className='progress-container-one'>
-                    <p>Layout</p>
-                    <p>Programming section</p> 
-                    <p>Covid-19 section</p>
-                    <p>Saved feature</p>
-                </div>
-            </div>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <div className='about-us'>
-            <div className='about-us-content'>
-            <div className='about-us-data'>
-                <img src={brand} alt="Brand" />
                 <p>MAYSA PUTRA</p>
-                <p>RCTN-KS05-023</p>
+                <p>RCTN-KS05-022</p>
             </div>
             <div className='about-us-progress'>
                 <div className='progress-container-two'>
@@ -44,6 +25,28 @@ function AboutUs() {
         </div>
         <br/>
         <br/>
+
+        <div className='about-us'>
+            <div className='about-us-content'>
+            <div className='about-us-data'>
+                <img src={brand} alt="Brand" />
+                <p>DWI SAMSIARTO</p>
+                <p>RCTN-KS05-023</p>
+            </div>
+            <div className='about-us-progress'>
+                <div className='progress-container-one'>
+                    <p>Layout</p>
+                    <p>Programming section</p> 
+                    <p>Covid-19 section</p>
+                    <p>Saved feature</p>
+                    <p>Footer</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        
         <div className='about-us'>
             <div className='about-us-content'>
             <div className='about-us-data'>
