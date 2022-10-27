@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { savedNews } from '../../features/Saved/savedSlice'
-import SaveButton from '../button/saveButton'
-// import SaveIco from '../../assets/archive-add.svg'
+import { savedNews } from '../../features/SavedSlice'
+import SaveButton from '../Button/SaveButton'
+import IconSave from '../../assets/IconSave.svg'
+import IconUnsave from '../../assets/IconUnsave.svg'
 
 const Layout = ({ news }) => {
 	const dispatch = useDispatch();
@@ -23,11 +24,10 @@ const Layout = ({ news }) => {
 			<div className="bottom-card">
 				<p>{news.source.name}<span> • {news.publishedAt}</span></p>
 				<div className="button">
-					{/* <img src={SaveIco} alt="Save"/> */}
 					<SaveButton
 						onClick={() => dispatch(savedNews(news))}
 					>
-						{savedArticle.find(article => article.title === news.title) ? 'UnSave' : 'Save'}
+						{savedArticle.find(article => article.title === news.title) ? <img src={IconUnsave} alt="Unsave"/> : <img src={IconSave} alt="Save"/>}
 					</SaveButton>
 			
 				</div>
