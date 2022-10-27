@@ -30,7 +30,7 @@ function Footer() {
         <hr />
         <div className="row">
           <p className="col text-center copyrights">
-            &copy;{new Date().getFullYear()} Copyright • All rights reserved • NewsApp
+            &copy;{new Date().getFullYear()} Copyright • All rights reserved • NewsInd
           </p>
         </div>
       </div>

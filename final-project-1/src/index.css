@@ -26,7 +26,7 @@ code {
 }
 
 
-.feature-content, .feature-pagination{
+.feature-content {
   padding-top: 0px;
   width: 100%;
   display: flex;
@@ -135,7 +135,7 @@ code {
   color: #fff!important;
 }
 
-.page-content:hover {
+.page-content:hover, .page-content:focus {
   background-color: #222222;
   color: white;
 }
@@ -303,4 +303,29 @@ h3{
 
 .category-title {
   font-family: 'Libre Baskerville', serif;
+}
+
+.container-pagination {
+  padding-top: 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.page-link {
+  color: white !important;
+  display: inline-block;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  margin: 5px;
+  background-color: black !important;
+}
+
+.page-link:hover, .page-link:focus {
+  background-color: white !important;
+  color: black !important;
 }

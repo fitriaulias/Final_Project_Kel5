@@ -2,10 +2,15 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Layout from '../../components/Layout/Layout';
 import Title from '../../components/Layout/Title'
+import Pagination from '../../features/Pagination'
 
 
 const IndonesiaPage = () => {
 	const [news, setNews] = useState([]);
+
+	//pagination
+	const [currentPage, setCurrentPage] = useState(1);
+  	const [postsPerPage] = useState(5);
 
 	useEffect(() => {
 		(async () => {
@@ -17,6 +22,14 @@ const IndonesiaPage = () => {
 		})();
 	}, []);
 
+	// Get current posts
+	const indexOfLastPost = currentPage * postsPerPage;
+	const indexOfFirstPost = indexOfLastPost - postsPerPage;
+	const currentPosts = news.slice(indexOfFirstPost, indexOfLastPost);
+  
+	// Change page
+	const paginate = pageNumber => setCurrentPage(pageNumber);
+
 	return (
 		
 			<Title title="Indonesia">
@@ -24,11 +37,17 @@ const IndonesiaPage = () => {
 					<h2>Indonesia</h2>
 				</div>
 				<section>
-					
-						{news?.map(n => (
+					{currentPosts?.map(n => (
 							<Layout news={n} key={n.title} />
-						))}
-					
+					))}
+					<div>
+
+					<Pagination
+        			postsPerPage={postsPerPage}
+        			totalPosts={news.length}
+        			paginate={paginate}
+      				/>
+				</div>
 				</section>
 			</Title>
 	);

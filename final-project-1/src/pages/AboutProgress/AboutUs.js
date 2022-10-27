@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './icon-navbar.png'
+import brand from '../../assets/icon-navbar.png'
 
 function AboutUs() {
   return (
@@ -10,7 +10,7 @@ function AboutUs() {
         <div className='about-us'>
             <div className='about-us-content'>
             <div className='about-us-data'>
-                <img src={logo} alt="Brand" />
+                <img src={brand} alt="Brand" />
                 <p>DWI SAMSIARTO</p>
                 <p>RCTN-KS05-022</p>
             </div>
@@ -29,7 +29,7 @@ function AboutUs() {
         <div className='about-us'>
             <div className='about-us-content'>
             <div className='about-us-data'>
-                <img src={logo} alt="Brand" />
+                <img src={brand} alt="Brand" />
                 <p>MAYSA PUTRA</p>
                 <p>RCTN-KS05-023</p>
             </div>
@@ -47,7 +47,7 @@ function AboutUs() {
         <div className='about-us'>
             <div className='about-us-content'>
             <div className='about-us-data'>
-                <img src={logo} alt="Brand" />
+                <img src={brand} alt="Brand" />
                 <p>FITRI AULIA S.</p>
                 <p>RCTN-KS05-024</p>
             </div>
