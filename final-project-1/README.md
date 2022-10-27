@@ -135,7 +135,7 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 </details>
 <details>
     <summary>Menyimpan berita terpilih</summary>
-    <img src="src/assets/4-menyimpan-berita.png" alt="Save">
+    <img src="src/assets/IconSave.svg" alt="Save">
     <p>Untuk menyimpan berita yang hendak Anda baca kembali, tekan tombol Save yang terletak di bagian bawah deskripsi berita.
     </p>
 </details>
@@ -147,7 +147,7 @@ Berikut langkah-langkah untuk instalasi aplikasi NewsInd.
 </details>
 <details>
     <summary>Menghapus berita yang disimpan</summary>
-    <img src="src/assets/6-menghapus-berita-disimpan.png" alt="Unsave">
+    <img src="src/assets/IconUnsave.svg" alt="Unsave">
     <p>Untuk menghapus berita yang telah Anda simpan, cukup tekan tombol UnSave dan berita akan terhapus dari library saved Anda.
     </p>
 </details>
