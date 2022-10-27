@@ -269,7 +269,7 @@ code {
 .main-footer {
   z-index: 2;
   background-color: white;
-  margin-top: 30%;
+  margin-top: 12%;
   padding-top: 2em;
   position: relative;
   bottom: 0;
@@ -328,4 +328,10 @@ h3{
 .page-link:hover, .page-link:focus {
   background-color: white !important;
   color: black !important;
+}
+
+button{
+  background-color: white !important;
+  color: black;
+  border: none !important;
 }
