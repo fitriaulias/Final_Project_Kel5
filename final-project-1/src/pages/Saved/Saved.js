@@ -1,5 +1,5 @@
-import Layout from '../../components/layout/Layout';
-import Title from '../../components/layout/Title'
+import Layout from '../../components/Layout/Layout';
+import Title from '../../components/Layout/Title'
 import { useSelector } from 'react-redux';
 
 const SavedPage = () => {

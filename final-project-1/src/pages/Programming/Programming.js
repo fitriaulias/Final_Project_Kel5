@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Layout from '../../components/layout/Layout';
-import Title from '../../components/layout/Title';
+import Layout from '../../components/Layout/Layout';
+import Title from '../../components/Layout/Title';
 import Pagination from '../../features/Pagination';
 
 

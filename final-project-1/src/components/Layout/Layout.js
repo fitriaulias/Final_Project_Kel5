@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { savedNews } from '../../features/SavedSlice'
-import SaveButton from '../button/SaveButton'
+import SaveButton from '../Button/SaveButton'
 import IconSave from '../../assets/IconSave.svg'
 import IconUnsave from '../../assets/IconUnsave.svg'
 
