@@ -3,7 +3,7 @@
 
 
 ## Mockup
-You can see our mockup project on [here!](https://www.figma.com/file/mUE81XMrbLNoT2WwraYSzE/Final-Project-1?node-id=0%3A1)
+You can see our first final project mockup on [here!](https://www.figma.com/file/mUE81XMrbLNoT2WwraYSzE/Final-Project-1?node-id=0%3A1)
 
 ## Run
 ```bash
