@@ -23,21 +23,21 @@
   <summary>Daftar Isi</summary>
   <ol>
     <li>
-      <a href="#mentoring-status">Status Mentoring</a>
+      <a href="#status-mentoring">Status Mentoring</a>
     </li>
     <li>
-      <a href="#siapakah-kami">Siapakah Kami?</a>
+      <a href="#siapakah-kami">Anggota Kelompok</a>
     </li>
     <li>
       <a href="#tentang-project">Tentang Project</a>
       <ul>
-        <li><a href="#built-with">Frameworks/Libraries</a></li>
+        <li><a href="#framework/libraries">Frameworks/Libraries</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation">Instalasi Aplikasi</a></li>
+        <li><a href="#instalasi-aplikasi">Instalasi Aplikasi</a></li>
         <li><a href="#cara-penggunaan-aplikasi">Cara Penggunaan Aplikasi</a></li>
       </ul>
     </li>
@@ -56,7 +56,7 @@ Mentoring **telah dilaksanakan** pada:
 <br/>
 
 <!-- MEMBER GROUP -->
-## Siapakah Kami?
+## Anggota Kelompok
 * I Putu Gede Maysa Putra (RCTN-KS05-022)
 * Dwi Samsiarto (RCTN-KS05-023)
 * Fitri Aulia S. (RCTN-KS05-024)
@@ -82,9 +82,9 @@ Fitur yang tersedia di NewsInd:
 
 <br/>
 
-### Frameworks/Libraries/Tools
+### Frameworks/Libraries
 
-Daftar Frameworks/libraries/Tools yang kami gunakan:
+Daftar Frameworks/libraries yang kami gunakan:
 
 * React
 * Figma
