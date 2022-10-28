@@ -15,7 +15,7 @@ const ProgrammingPage = () => {
 	
 	useEffect(() => {
 		(async () => {
-
+ 
 			const res = await axios.get(`https://newsapi.org/v2/everything?q=programming&pageSize=40&apiKey=84de37a1a2054cc18bafae4caa2694fe`);
 
 			setNews(res.data.articles);
@@ -29,7 +29,7 @@ const ProgrammingPage = () => {
   
 	// Change page
 	const paginate = pageNumber => setCurrentPage(pageNumber);
-
+	
 	return (
 		<Title title="Programming">
 			<div className='category-title'>

@@ -1,18 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import SaveIco from '.././assets/archive-add.svg'
+import { setSearch } from '../features/SearchSlice'
+import { useDispatch } from 'react-redux'
+import {useNavigate} from "react-router-dom"
+
 
 function SidebarRight() {
-  const [inputText, setInputText] = useState("")
+  const dispatch = useDispatch()
+  const nav = useNavigate()
   let inputhandler = (e) => {
     if(e.key === 'Enter'){
       var lowerCase = e.target.value.toLowerCase()
-      setInputText(lowerCase)
+      dispatch(setSearch(lowerCase))
+      // store.dispatch(extendedApiSlice.endpoints.ge)
+      
       e.target.value = ''
+      nav("./Search")
     }
   }
-
-  console.log(inputText)
 
   return (
       <div className='sidebar-right'>

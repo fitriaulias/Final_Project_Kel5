@@ -10,7 +10,7 @@ import AboutUs from './pages/AboutProgress/AboutUs';
 import Footer from './components/Footer/Footer';
 import IndonesiaPage from './pages/Indonesia/Indonesia';
 import AllPage from './pages/All/All';
-
+import SearchP from './pages/Search/Search'
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path="/covid19" element={<CovidNews />} />
         <Route path="/saved" element={<Saved/>} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path='/search' element={<SearchP />} />
       </Routes>
       <Footer/>
     </div>
