@@ -15,7 +15,7 @@ const CovidPage = () => {
 	useEffect(() => {
 		(async () => {
 			const res = await axios.get(
-				`https://newsapi.org/v2/everything?q=covid&pageSize=40&apiKey=a403faed7a1a4aa89b4870e0d507d9ef`
+				`https://newsapi.org/v2/everything?q=covid&pageSize=40&apiKey=84de37a1a2054cc18bafae4caa2694fe`
 			);
 
 			setNews(res.data.articles);
