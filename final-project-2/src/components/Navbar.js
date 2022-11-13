@@ -15,10 +15,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/cart">
-        Cart <p>{cartTotalQuantity}</p>
-      </NavLink>
+      <div className="border border-bottom">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/cart">
+          Cart <p>{cartTotalQuantity}</p>
+        </NavLink>
+      </div>
     </div>
   );
 };

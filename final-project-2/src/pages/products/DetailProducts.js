@@ -10,9 +10,6 @@ const DetailProducts = () => {
   const [detail, setDetail] = useState([]);
   const cartItems = useSelector((state) => state.cart.cartItems);
   // const cart = cartItems.find((cart) => cart.id === id);
-  // const isCartAdded = cartItems.findIndex((cart) => {
-  //   return cart.id === id;
-  // });
 
   useEffect(() => {
     (async () => {
@@ -47,12 +44,7 @@ const DetailProducts = () => {
                 <div className="w-50">
                   <DecreaseButton product={detail} name="-" />
                 </div>
-                <p>
-                  {
-                    cartItems.findIndex((detail) => detail.id === id)
-                      .cartQuantity
-                  }
-                </p>
+
                 <div className="w-50">
                   <IncreaseButton product={detail} name="+" />
                 </div>
