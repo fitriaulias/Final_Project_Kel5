@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { calculateQuantity } from "../redux/features/cartSlice";
 import { addItem } from "../redux/features/cartSlice";
 
-const IncreaseButton = ({ product, name }) => {
+const IncreaseButton = ({ product, name, styling }) => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const IncreaseButton = ({ product, name }) => {
     <div>
       <button
         type="button"
-        className="button-style"
+        className={`button-style ${styling}`}
         onClick={() => addItemButton(product)}
       >
         {name}

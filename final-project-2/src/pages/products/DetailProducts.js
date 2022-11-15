@@ -59,7 +59,11 @@ const DetailProducts = () => {
             </p>
           </div>
           <div className="add-to-cart rounded-2">
-            <IncreaseButton product={detail} name="Add to Cart" />
+            <IncreaseButton
+              product={detail}
+              name="Add to Cart"
+              styling="btn btn-dark btn-outline-light px-5"
+            />
           </div>
         </div>
       </div>

@@ -37,7 +37,11 @@ const ProductCard = ({ product }) => {
           </p>
           <h4 className="card-text text-start mb-3">${product.price}</h4>
           <div className="add-to-cart">
-            <IncreaseButton product={product} name="Add to Cart" />
+            <IncreaseButton
+              product={product}
+              name="Add to Cart"
+              styling="btn btn-outline-dark px-5 rounded-0"
+            />
           </div>
         </div>
       </div>

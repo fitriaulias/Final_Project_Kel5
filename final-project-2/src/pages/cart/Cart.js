@@ -17,56 +17,74 @@ const Cart = () => {
   }, [cartItems, dispatch]);
 
   return (
-    <div>
-      {cartItems.length > 0 ? (
-        <>
-          <p>Your Cart has {cartTotalQuantity}</p>
-          <table>
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Product</th>
-                <th>Picture</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cartItems &&
-                cartItems.map((cart, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>{index + 1}</td>
-                      <td>{cart.title}</td>
-                      <td>
-                        <img src={cart.image} alt={cart.title} width="100px" />
-                      </td>
-                      <td>${cart.price}</td>
-                      <td>{cart.cartQuantity}</td>
-                      <td>{(cart.price * cart.cartQuantity).toFixed(2)}</td>
-                      <td>
-                        <IncreaseButton product={cart} name="+" />
-                        <DecreaseButton product={cart} name="-" />
-                      </td>
-                    </tr>
-                  );
-                })}
-              <tr>
-                <td>Total</td>
-                <td>{`Cart item(s): ${cartTotalQuantity}`}</td>
-                <td>{`$${cartTotalPrice.toFixed(2)}`}</td>
-                <td>
-                  <button>Place order</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </>
-      ) : (
-        <h5>Your cart is empty!</h5>
-      )}
+    <div className="homepage d-flex justify-content-center">
+      <div className="bg-white w-75 my-5 rounded">
+        {cartItems.length > 0 ? (
+          <>
+            <div className="table-responsive-sm">
+              <table className="m-4">
+                <thead className="">
+                  <tr className="border">
+                    <th>Picture</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody className="">
+                  {cartItems &&
+                    cartItems.map((cart, index) => {
+                      return (
+                        <tr key={index} className="">
+                          <td className="p-4">
+                            <img
+                              src={cart.image}
+                              alt={cart.title}
+                              width="100px"
+                            />
+                          </td>
+                          <td className="text-start w-25">{cart.title}</td>
+                          <td>${cart.price}</td>
+                          <td>
+                            ${(cart.price * cart.cartQuantity).toFixed(2)}
+                          </td>
+                          <td>
+                            <div className="d-flex justify-content-center">
+                              <IncreaseButton
+                                product={cart}
+                                name="+"
+                                styling="btn btn-outline-dark mx-2"
+                              />
+                              <div className="border border-dark rounded px-2">
+                                {cart.cartQuantity}
+                              </div>
+                              <DecreaseButton
+                                product={cart}
+                                name="-"
+                                styling="btn btn-outline-dark mx-2"
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  <tr className="border border-top">
+                    <td>Total</td>
+                    <td>{`Cart item(s): ${cartTotalQuantity}`}</td>
+                    <td>{`$${cartTotalPrice.toFixed(2)}`}</td>
+                    <td>
+                      <button>Place order</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </>
+        ) : (
+          <h5>Your cart is empty!</h5>
+        )}
+      </div>
     </div>
   );
 };

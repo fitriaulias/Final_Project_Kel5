@@ -43,16 +43,12 @@ a {
   width: 35rem;
 }
 
+/* button */
+
 .button-style {
   background: none;
   border: none;
   padding: 0;
-}
-
-.add-to-cart {
-  border: 1px solid black;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .detail-price {
@@ -64,3 +60,15 @@ a {
   border: none;
 }
 
+/* @media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+} */
+
+/* Table */
+
+.table {
+  border-collapse: separate;
+  border-spacing:0 20px;
+}
