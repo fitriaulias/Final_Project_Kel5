@@ -73,8 +73,11 @@ const Cart = () => {
                     <td>Total</td>
                     <td>{`Cart item(s): ${cartTotalQuantity}`}</td>
                     <td>{`$${cartTotalPrice.toFixed(2)}`}</td>
+                    <td></td>
                     <td>
-                      <button>Place order</button>
+                      <button className="btn btn-outline-dark px-5">
+                        Place order
+                      </button>
                     </td>
                   </tr>
                 </tbody>

@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://github.com/fitriaulias/Final_Project_Kel5/tree/main/final-project-2">
+    <img src="src/assets/icon.png" alt="Logo" width="90" height="90">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Bukapedia</h3>
 
-## Available Scripts
+  <p align="center">
+    Bukapedia adalah e-commerce project yang memanfaatkan fakeapistore untuk menampilkan data berupa detail produk yang ada. Di program ini terdapat beberapa fitur yang dapat digunakan oleh pengguna, seperti login, cart, checkout, dan juga halaman admin.
+    <br />
+    <a href="https://github.com/fitriaulias/Final_Project_Kel5/tree/main/final-project-2"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <p>Final Project 2 oleh Kelompok 5</p>
+  </p>
+</div>
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Daftar Isi</summary>
+  <ol>
+    <li>
+      <a href="#status-mentoring">Status Mentoring</a>
+    </li>
+    <li>
+      <a href="#anggota-kelomok">Anggota Kelompok</a>
+    </li>
+    <li>
+      <a href="#tentang-project">Tentang Project</a>
+      <ul>
+        <li><a href="#framework/libraries">Frameworks/Libraries</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#instalasi-aplikasi">Instalasi Aplikasi</a></li>
+        <li><a href="#cara-penggunaan-aplikasi">Cara Penggunaan Aplikasi</a></li>
+      </ul>
+    </li>
+    <li><a href="#presentasi">Presentasi</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- STATUS MENTORING -->
 
-### `npm test`
+## Status Mentoring
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mentoring **akan dilaksanakan** pada:
 
-### `npm run build`
+- :date: Tanggal dan waktu: 16 November 2022, 13.00 WIB
+- Instruktur: Pak Arif Setiawan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- MEMBER GROUP -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Anggota Kelompok
 
-### `npm run eject`
+- I Putu Gede Maysa Putra (RCTN-KS05-022)
+- Dwi Samsiarto (RCTN-KS05-023)
+- Fitri Aulia S. (RCTN-KS05-024)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ABOUT THE PROJECT -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tentang Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="src/assets/tentang-project.png" alt="Logo" align="center">
 
-## Learn More
+Aplikasi e-commerce yang memanfaatkan fakeapistore..
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Kategori produk dalam aplikasi ini yang tersedia yaitu:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Men's clothing
+- Women's clothing
+- Jewelery
+- Electronics
 
-### Code Splitting
+Fitur yang tersedia di NewsInd:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Login
+- Cart and checkout
+- Admin page
 
-### Analyzing the Bundle Size
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Mockup
 
-### Making a Progressive Web App
+Cek mockup kami [disini!](https://www.figma.com/file/9hf5BqnWhP0DHVX3EIkfCi/Untitled?node-id=0%3A1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Frameworks/Libraries
 
-### Advanced Configuration
+Daftar Frameworks/libraries yang kami gunakan:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- React
+- React Redux
 
-### Deployment
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- GETTING STARTED -->
 
-### `npm run build` fails to minify
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Untuk menggunakan aplikasi Bukapedia, langkah pertama yang harus dilakukan adalah instalasi aplikasi.
+
+### Instalasi Aplikasi
+
+Berikut langkah-langkah untuk instalasi aplikasi Bukapedia.
+
+1. Clone repository
+   ```sh
+   git clone https://github.com/fitriaulias/Final_Project_Kel5.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Jalankan aplikasi
+   ```sh
+   npm start
+   ```
+
+<br/>
+
+## Presentasi
+
+1. PowerPoint di [canva](https://www.canva.com/design/DAFSAw90XdA/RsyOPqwnffAzVxD4v6ilvg/edit?utm_content=DAFSAw90XdA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+2. Desain Mockup di [Figma](https://www.figma.com/file/9hf5BqnWhP0DHVX3EIkfCi/Untitled?node-id=0%3A1)
+3. Management progress member di [Notion](https://www.notion.so/Final-Project-2-cf74a20c87744baeb060b3657e7abb0f)
+4. <details>
+   <summary>Coding</summary>
+   <ol type="1">
+       <li>Login</li>
+       <li>Produk</li>
+       <li>Cart</li>
+       <li>Checkout</li>
+       <li>Admin page</li>
+   </ol>
+   </details>
+5. Demo aplikasi
+
+<br/>

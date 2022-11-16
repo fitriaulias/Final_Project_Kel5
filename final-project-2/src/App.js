@@ -9,6 +9,7 @@ import Navigation from "./components/Navbar";
 import { useState } from "react";
 import Login from "./pages/login/Login";
 import Admin from "./pages/admin/Admin";
+import Footer from "./components/Footer";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("userToken") ?? null);
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Home token={token} setToken={setToken} /> }/>
 
       </Routes>
+      <Footer />
     </div>
   );
 }

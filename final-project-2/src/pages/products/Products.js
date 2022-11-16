@@ -26,33 +26,33 @@ const Products = () => {
         <div className="centering-me pt-5">
           <div className="flex-me">
               <button
-                className="our-products text-start w-50 fs-4"
+                className="btn-product our-products text-start w-50 fs-4"
                 onClick={() => setCategories(product)}
               >
                 Our Products
               </button>
 
               <button
-                className="btn me-2"
+                className="btn-product btn me-2"
                 onClick={() => filterCategories("men's clothing")}
               >
                 Men's Clothing
               </button>
 
               <button
-                className="btn me-2"
+                className="btn-product btn me-2"
                 onClick={() => filterCategories("women's clothing")}
               >
                 Women's Clothing
               </button>
               <button
-                className="btn me-2"
+                className="btn-product btn me-2"
                 onClick={() => filterCategories("jewelery")}
               >
                 Jewelery
               </button>
               <button
-                className="btn me-2"
+                className="btn-product btn me-2"
                 onClick={() => filterCategories("electronics")}
               >
                 Electronics
