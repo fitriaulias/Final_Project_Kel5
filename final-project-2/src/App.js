@@ -3,9 +3,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/cart/Cart";
 import DetailProducts from "./pages/products/DetailProducts";
-// import Products from "./pages/products/Products";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/product/:id" element={<DetailProducts />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -72,3 +72,16 @@ a {
   border-collapse: separate;
   border-spacing:0 20px;
 }
+
+/* Footer */
+
+.main-footer {
+  z-index: 2;
+  background-color: white;
+  /* margin-top: 12%; */
+  padding-top: 2em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: lightgray 1px solid;
+}
