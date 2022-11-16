@@ -17,8 +17,8 @@ const Cart = () => {
   }, [cartItems, dispatch]);
 
   return (
-    <div className="homepage d-flex justify-content-center">
-      <div className="bg-white w-75 my-5 rounded">
+    <div className="section-one homepage d-flex justify-content-center">
+      <div className="bg-white w-75 rounded cart-card">
         {cartItems.length > 0 ? (
           <>
             <div className="table-responsive-sm">

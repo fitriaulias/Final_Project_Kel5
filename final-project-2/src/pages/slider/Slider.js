@@ -46,8 +46,8 @@ const Slider = () => {
   }, [currentSlide, slideInterval, autoScroll]);
 
   return (
-    <div className="m-5">
-      <div className="d-flex">
+    <div>
+      <div className="d-flex section-one">
         <div className="d-flex justify-content-center flex-row w-50 ms-5 ps-5">
           <div className="text-start p-5 m-5">
             <h2 className="mt-5">Fashion Up Your Look</h2>
@@ -72,7 +72,7 @@ const Slider = () => {
               />
             </div>
           </div>
-          <div className="m-3">
+          <div className="m-3 card-center">
             {product.map((item, index) => {
               return (
                 <div
