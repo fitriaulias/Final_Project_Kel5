@@ -4,7 +4,7 @@
     <img src="src/assets/icon.png" alt="Logo" width="90" height="90">
   </a>
 
-  <h3 align="center">NewsInd</h3>
+  <h3 align="center">Bukapedia</h3>
 
   <p align="center">
     Bukapedia adalah e-commerce project yang memanfaatkan fakeapistore untuk menampilkan data berupa detail produk yang ada. Di program ini terdapat beberapa fitur yang dapat digunakan oleh pengguna, seperti login, cart, checkout, dan juga halaman admin.

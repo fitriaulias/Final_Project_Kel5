@@ -75,10 +75,7 @@ const Slider = () => {
           <div className="m-3">
             {product.map((item, index) => {
               return (
-                <div
-                  className={index === currentSlide ? "slide current" : "slide"}
-                  key={index}
-                >
+                <div key={index}>
                   {index === currentSlide && (
                     <>
                       <ProductCard product={item} />
