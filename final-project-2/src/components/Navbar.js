@@ -36,7 +36,7 @@ const Navigation = ({token, setToken}) => {
             <Nav>
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="product">Products</Nav.Link>
-              <Nav.Link as={Link} to="/">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
               <Nav.Link as={Link} to="/cart">Cart <span className="count-on-me">{cartTotalQuantity}</span></Nav.Link>
               {token == null ? <button className="btn-primary" onClick={() => nav("./Login")}>LOGIN</button> :
               <Dropdown className="d-inline mx-2" autoClose="inside">

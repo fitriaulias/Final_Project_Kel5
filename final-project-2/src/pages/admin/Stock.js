@@ -8,7 +8,7 @@ const Stock = () => {
     
 
     return(
-        <div className="container stock">
+        <div className="container stock vh-100">
             <header className="py-4 mt-5 mb-2 border-bottom">
                 <div className="container d-flex flex-wrap justify-content-center">
                     <Link
@@ -48,9 +48,9 @@ const Stock = () => {
                             <h4>Title</h4>
                             </td>
                             <td>
-                                <span className="text-secondary w-75">
+                                <h5 className="text-secondary w-75">
                                     category
-                                </span>
+                                </h5>
                             </td>
                             <td width="130px">
                                 <Form.Control 

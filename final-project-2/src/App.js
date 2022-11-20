@@ -1,5 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+import { Stack } from "react-bootstrap";
 import Cart from "./pages/cart/Cart";
 import DetailProducts from "./pages/products/DetailProducts";
 import Products from "./pages/products/Products";
@@ -12,6 +13,19 @@ import AboutUs from "./pages/aboutProgress/AboutUs";
 import Stock from "./pages/admin/Stock";
 import Recap from "./pages/admin/Recap";
 import Footer from "./components/Footer";
+
+function NoMatch() {
+  let location = useLocation();
+
+  return (
+    <div className="vh-100 d-flex">
+      <Stack className="m-auto align-items-center">
+        <h1>Error 404</h1>
+        <h3>pages <code>{location.pathname}</code> not found</h3>
+      </Stack>
+    </div>
+  );
+}
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("userToken") ?? null);
@@ -27,6 +41,8 @@ function App() {
         <Route path="product" element={<Products />}/>
         <Route path="/aboutus" element={<AboutUs />}/>
         <Route path="/recap" element={<Recap />}/>
+        <Route path="*" element={<NoMatch />}/>
+
         
         <Route path="/login" element={<Login setToken={setToken} />}/>
         {token === 'IM_ADMIN' ? <Route path="/admin" element={<Stock setToken={setToken} />}/> : <Route path="/login" element={<Login setToken={setToken} />}/>}
