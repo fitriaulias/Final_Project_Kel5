@@ -19,9 +19,9 @@ const CheckoutDetail = () => {
   return (
     <div className="container pt-5 mb-5">
       <div className="tablerounededCorner">
-        <h4 className="py-5">
+        <h3 className="py-5">
           <b>Checkout Details</b>
-        </h4>
+        </h3>
         <div>
           {cartItems.length === 0 ? (
             <div>

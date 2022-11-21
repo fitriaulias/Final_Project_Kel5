@@ -24,7 +24,7 @@ const Cart = () => {
     if (localStorage.getItem("userToken")) {
       navigate("/checkout-details");
     } else {
-      navigate("/login");
+      navigate("/notlogin");
     }
   };
 

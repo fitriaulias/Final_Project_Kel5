@@ -15,6 +15,7 @@ import Recap from "./pages/admin/Recap";
 import Footer from "./components/Footer";
 import CheckoutDetail from "./pages/checkout/CheckoutDetail";
 import CheckoutMessage from "./pages/checkout/CheckoutMessage";
+import NotLogin from "./pages/login/NotLogin";
 
 function NoMatch() {
   let location = useLocation();
@@ -45,6 +46,7 @@ function App() {
         <Route path="product" element={<Products />} />
         <Route path="/checkout-details" element={<CheckoutDetail />} />
         <Route path="/checkout-message" element={<CheckoutMessage />} />
+        <Route path="/notlogin" element={<NotLogin />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/recap" element={<Recap />} />
         <Route path="*" element={<NoMatch />} />

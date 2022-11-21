@@ -176,6 +176,10 @@ a {
   border-radius: 8px;
 }
 
+.notlogin {
+  text-align: left;
+}
+
 /* Footer */
 
 .main-footer {
