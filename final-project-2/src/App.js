@@ -13,6 +13,8 @@ import AboutUs from "./pages/aboutProgress/AboutUs";
 import Stock from "./pages/admin/Stock";
 import Recap from "./pages/admin/Recap";
 import Footer from "./components/Footer";
+import CheckoutDetail from "./pages/checkout/CheckoutDetail";
+import CheckoutMessage from "./pages/checkout/CheckoutMessage";
 
 function NoMatch() {
   let location = useLocation();
@@ -21,7 +23,9 @@ function NoMatch() {
     <div className="vh-100 d-flex">
       <Stack className="m-auto align-items-center">
         <h1>Error 404</h1>
-        <h3>pages <code>{location.pathname}</code> not found</h3>
+        <h3>
+          pages <code>{location.pathname}</code> not found
+        </h3>
       </Stack>
     </div>
   );
@@ -38,16 +42,20 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<DetailProducts />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="product" element={<Products />}/>
-        <Route path="/aboutus" element={<AboutUs />}/>
-        <Route path="/recap" element={<Recap />}/>
-        <Route path="*" element={<NoMatch />}/>
+        <Route path="product" element={<Products />} />
+        <Route path="/checkout-details" element={<CheckoutDetail />} />
+        <Route path="/checkout-message" element={<CheckoutMessage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/recap" element={<Recap />} />
+        <Route path="*" element={<NoMatch />} />
 
-        
-        <Route path="/login" element={<Login setToken={setToken} />}/>
-        {token === 'IM_ADMIN' ? <Route path="/admin" element={<Stock setToken={setToken} />}/> : <Route path="/login" element={<Login setToken={setToken} />}/>}
-        <Route path="/" element={<Home token={token} setToken={setToken} /> }/>
-
+        <Route path="/login" element={<Login setToken={setToken} />} />
+        {token === "IM_ADMIN" ? (
+          <Route path="/admin" element={<Stock setToken={setToken} />} />
+        ) : (
+          <Route path="/login" element={<Login setToken={setToken} />} />
+        )}
+        <Route path="/" element={<Home token={token} setToken={setToken} />} />
       </Routes>
       <Footer />
     </div>

@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import IncreaseButton from "../../components/IncreaseButton";
 import DecreaseButton from "../../components/DecreaseButton";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const DetailProducts = () => {
   const { id } = useParams();
   const [detail, setDetail] = useState([]);
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  // const cartItems = useSelector((state) => state.cart.cartItems);
   // const cart = cartItems.find((cart) => cart.id === id);
 
   useEffect(() => {
@@ -33,10 +33,7 @@ const DetailProducts = () => {
             />
           </div>
         </div>
-        <div
-          className="bg-white rounded ms-3 p-4 w-25"
-          style={{ height: "14rem" }}
-        >
+        <div className="bg-white rounded ms-3 p-4 w-25 h-25">
           <p className="text-start fs-5 fw-bold mb-1">Set the order</p>
           <div className="border-top border-bottom border-1">
             <div className="d-flex">
@@ -49,7 +46,7 @@ const DetailProducts = () => {
                   <IncreaseButton product={detail} name="+" />
                 </div>
               </div>
-              <p className="m-3">Stok: belum dikerjain</p>
+              <p className="m-3">Stock: </p>
             </div>
           </div>
           <div className="mb-4">

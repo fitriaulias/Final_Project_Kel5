@@ -97,11 +97,6 @@ a {
   background-color: #e9ecef;
 }
 
-/* .button-detail {
-  width: 1rem;
-  border: 1px solid black;
-} */
-
 .container-one {
   width: 35rem;
 }
@@ -123,13 +118,6 @@ a {
   border: none;
 }
 
-/* @media screen and (max-width: 1000px) {
-  body {
-    width: 100%;
-  }
-} */
-
-/* Table */
 
 .table {
   border-collapse: separate;
@@ -196,7 +184,30 @@ a {
   /* margin-top: 12%; */
   padding-top: 2em;
   position: relative;
-  bottom: 0;
+  bottom: 0 !important;
   width: 100%;
   border-top: lightgray 1px solid;
+}
+
+/* Checkout */
+
+.checkout {
+  text-align: left;
+}
+
+/* Cart */
+
+.cart-head {
+  text-align: center;
+}
+
+.cart-me {
+  padding-top: 5em;
+}
+
+.cart-empty {
+  padding: 2em;
+  border-radius: 1.2em;
+  background-color: white;
+  box-shadow: 4px 4px 4px #ced4da;
 }

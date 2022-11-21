@@ -4,6 +4,7 @@ import axios from "axios";
 import ProductCard from "../../components/ProductCard";
 import LeftArrow from "../../assets/LeftArrow.svg";
 import RightArrow from "../../assets/RightArrow.svg";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const [product, setProduct] = useState([]);
@@ -55,9 +56,11 @@ const Slider = () => {
               {" "}
               With Our <b>Best Product</b>
             </h2>
-            <button className="btn btn-dark btn-outline-light mt-2 py-1 border border-dark rounded">
-              Login here
-            </button>
+            <Link to="/login">
+              <button className="btn btn-dark btn-outline-light mt-2 py-1 border border-dark rounded w-100">
+                Login
+              </button>
+            </Link>
           </div>
         </div>
         <div className="d-flex justify-content-center flex-row w-50 pe-5">
