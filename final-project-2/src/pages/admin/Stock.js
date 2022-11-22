@@ -13,6 +13,7 @@ const Stock = () => {
         ? state.product.products
         : JSON.parse(localStorage.getItem("allProducts"))
     );
+    console.log(allProducts)
 
     const handleUpdateStock = (id) => {
         dispatch(updateStock({ id: id, stock: count }));

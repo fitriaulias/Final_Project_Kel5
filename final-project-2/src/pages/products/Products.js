@@ -11,6 +11,7 @@ const Products = () => {
       const response = await axios.get(`https://fakestoreapi.com/products`);
 
       setProduct(response.data);
+      localStorage.setItem("allProducts", JSON.stringify(response.data))
       setCategories(response.data);
     })();
   }, []);
