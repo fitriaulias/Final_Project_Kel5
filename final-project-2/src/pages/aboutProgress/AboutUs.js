@@ -3,10 +3,10 @@ import './Styles.css'
 
 function AboutUs() {
   return (
-    <div className='about-progress'>
+    <div className='about-progress vh-100'>
         <div className="container mt-5 mb-3">
         
-            <div className="row">
+            <div className="row py-5">
                 <div className="col-md-4">
                     <div className="card p-3 mb-2">
                         <div className="d-flex justify-content-between">

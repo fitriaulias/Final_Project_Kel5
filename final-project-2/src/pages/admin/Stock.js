@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import './Styles.css'
 import { Image, Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-
+import { useSelector, useDispatch } from "react-redux";
+import { updateStock } from "../../redux/features/productSlice";
 
 const Stock = () => {
-    
+    const dispatch = useDispatch();
+    const [count, setCount] = useState(0);
+    const allProducts = useSelector((state) =>
+        state.product.products.length > 0
+        ? state.product.products
+        : JSON.parse(localStorage.getItem("allProducts"))
+    );
+
+    const handleUpdateStock = (id) => {
+        dispatch(updateStock({ id: id, stock: count }));
+      };
+
 
     return(
-        <div className="container stock vh-100">
+        <div className="container">
             <header className="py-4 mt-5 mb-2 border-bottom">
                 <div className="container d-flex flex-wrap justify-content-center">
                     <Link
@@ -33,43 +45,58 @@ const Stock = () => {
                     </form>
                 </div>
             </header>
-            
-            <div className="tablerounededCorner">
-                <table className="roundedTable">
-                    <tbody>
-                        <tr className="align-middle">
-                            <td style={{ textAlign: 'center' }}>
-                                <Image
-                                    width={90}
-                                    height={100}
-                                />
-                            </td>
-                            <td width="45%">
-                            <h4>Title</h4>
-                            </td>
-                            <td>
-                                <h5 className="text-secondary w-75">
-                                    category
-                                </h5>
-                            </td>
-                            <td width="130px">
-                                <Form.Control 
-                                    type="number" 
-                                    min={0} 
-                                />
-                            </td>
-                            <td>
-                                <Button
-                                    variant="dark"
-                                    type="button"
-                                >
-                                Update
-                                </Button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            {allProducts &&
+                allProducts.length > 0 &&
+                allProducts.map((product, idx) => {
+                    return (
+                        <div 
+                            key={product.id}
+                            className={`${
+                                idx % 2 === 0 && "tablerounededCorner"
+                                } `}
+                            >
+                            <table className="roundedTable">
+                                <tbody>
+                                    <tr className="align-middle">
+                                        <td style={{ textAlign: 'center' }}>
+                                            <Image
+                                                src={product.image}
+                                                alt={product.title}
+                                                width={90}
+                                                height={100}
+                                            />
+                                        </td>
+                                        <td width="45%" style={{ textAlign: 'left' }}>
+                                            <h5>{product.title}</h5>
+                                        </td>
+                                        <td style={{ textAlign: 'center' }}>
+                                            <h6 className="text-secondary w-75">
+                                                {product.category}
+                                            </h6>
+                                        </td>
+                                        <td width="130px" style={{ textAlign: 'right' }}>
+                                            <Form.Control 
+                                                onChange={(e) => setCount(parseInt(e.target.value))}
+                                                defaultValue={product.stock}
+                                                type="number" 
+                                                min={0} 
+                                            />
+                                        </td>
+                                        <td style={{ textAlign: 'right' }}>
+                                            <Button
+                                                onClick={() => handleUpdateStock(product.id)}
+                                                variant="dark"
+                                                type="button"
+                                            >
+                                            Update
+                                            </Button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        );
+                    })}
         </div>
     )
 }
