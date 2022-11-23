@@ -51,7 +51,7 @@
 
 ## Status Mentoring
 
-Mentoring **akan dilaksanakan** pada:
+Mentoring **telah dilaksanakan** pada:
 
 - :date: Tanggal dan waktu: 16 November 2022, 13.00 WIB
 - Instruktur: Pak Arif Setiawan
@@ -83,7 +83,7 @@ Kategori produk dalam aplikasi ini yang tersedia yaitu:
 - Jewelery
 - Electronics
 
-Fitur yang tersedia di NewsInd:
+Fitur yang tersedia di aplikasi ini:
 
 - Login
 - Cart and checkout
