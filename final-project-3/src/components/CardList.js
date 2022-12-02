@@ -8,7 +8,7 @@ const CardList = ({ hotel }) => {
       <View style={styles.rowOne}>
         <View>
           <Image
-            source={{ uri: `${hotel.media.url}` }}
+            source={{ uri: `${hotel?.media?.url}` }}
             style={{
               width: 100,
               height: 100,
