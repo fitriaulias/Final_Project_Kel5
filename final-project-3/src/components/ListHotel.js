@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { View, ScrollView, Text, StyleSheet } from "react-native";
 import axios from "axios";
 import CardList from "./CardList";
@@ -34,7 +34,7 @@ const ListHotel = (props) => {
   return (
     <View>
       <ScrollView>
-        <View style={styles.container}>
+        <View>
           <Text style={styles.text}>Hotels in {props.city}</Text>
         </View>
         {list?.map((hotel, index) => (

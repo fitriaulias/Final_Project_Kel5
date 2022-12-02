@@ -72,8 +72,6 @@ Mentoring **telah dilaksanakan** pada:
 
 ## Tentang Project
 
-<img src="src/assets/tentang-project.png" alt="Logo" align="center">
-
 Travelin. adalah final project ke-3 dari kelompok 5 yang memiliki beberapa fitur diantaranya:
 
 - Login
@@ -84,8 +82,6 @@ Travelin. adalah final project ke-3 dari kelompok 5 yang memiliki beberapa fitur
 
 API yang digunakan:
 [Priceline com Provider API](https://rapidapi.com/tipsters/api/priceline-com-provider/) by Tipsters CO
-
-<br/>
 
 ### Mockup
 

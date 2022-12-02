@@ -1,4 +1,3 @@
-import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
@@ -7,14 +6,16 @@ const CardList = ({ hotel }) => {
   return (
     <View style={styles.container}>
       <View style={styles.rowOne}>
-        <Image
-          source={{ uri: `${hotel.media.url}` }}
-          style={{
-            width: 100,
-            height: 100,
-            borderRadius: 10,
-          }}
-        />
+        <View>
+          <Image
+            source={{ uri: `${hotel.media.url}` }}
+            style={{
+              width: 100,
+              height: 100,
+              borderRadius: 10,
+            }}
+          />
+        </View>
       </View>
       <View style={styles.rowTwo}>
         <Text style={styles.name}>{hotel.name}</Text>

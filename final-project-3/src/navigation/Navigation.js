@@ -46,21 +46,9 @@ const Navigation = () => {
         component={MainApp}
         options={{ headerShown: false }}
       />
-      <HomeStack.Screen
-        name="Bali"
-        component={BaliSection}
-        options={{ headerShown: false }}
-      />
-      <HomeStack.Screen
-        name="Yogyakarta"
-        component={YogyakartaSection}
-        options={{ headerShown: false }}
-      />
-      <HomeStack.Screen
-        name="Bandung"
-        component={BandungSection}
-        options={{ headerShown: false }}
-      />
+      <HomeStack.Screen name="Bali" component={BaliSection} />
+      <HomeStack.Screen name="Yogyakarta" component={YogyakartaSection} />
+      <HomeStack.Screen name="Bandung" component={BandungSection} />
     </HomeStack.Navigator>
   );
 };
