@@ -1,12 +1,28 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/home/Home";
 import Login from "../screens/login/LoginScreen";
+import SplashScreen from "../screens/splash/SplashScreen";
 
 const HomeStack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
-export default function Navigation(){
+const MainApp = () => {
+  return(
+    <Tab.Navigator >
+      <Tab.Screen name="Home" component={Home} />
+    </Tab.Navigator>
+  )
+}
+
+const Navigation = () =>{
     return (
-            <HomeStack.Navigator>
+            <HomeStack.Navigator initialNavigation="Splash">
+              <HomeStack.Screen
+                name="Splash"
+                component={SplashScreen}
+                options={{ headerShown: false }}
+              />
               <HomeStack.Screen
                 name="Home"
                 component={Home}
@@ -22,7 +38,13 @@ export default function Navigation(){
                   headerShown: false,
                 })}
               />
+              <HomeStack.Screen
+                name="MainApp"
+                component={MainApp}
+                options={{ headerShown: false }}
+              />
             </HomeStack.Navigator>
     );
     
 }
+export default Navigation;

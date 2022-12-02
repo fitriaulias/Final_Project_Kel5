@@ -99,7 +99,7 @@ export default Login = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#3FBC71",
+    backgroundColor: "#f7f7fa",
   },
   logoSection: {
     flex: 2,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   formSection: {
-    backgroundColor: "#fff",
+    backgroundColor: "#ffffff",
     flex: 4,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
