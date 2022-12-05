@@ -1,6 +1,7 @@
 import * as React from "react";
-import { View, Button, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Button, Text, ScrollView, StyleSheet, FlatList } from "react-native";
 import PopularDestination from "../section/PopularDestination";
+import SearchCard from "../../components/SearchCard";
 
 const Home = ({ navigation }) => {
   return (
@@ -8,6 +9,15 @@ const Home = ({ navigation }) => {
       <ScrollView>
         <Text style={styles.title}>Find your</Text>
         <Text style={styles.title}>destination here...</Text>
+        <View style={styles}>
+          <FlatList
+            renderItem={({ item }) => {
+              return <Card data={item} />
+            }}
+            keyExtractor={item => item.id}
+            ListHeaderComponent={() => <SearchCard />}
+          />
+        </View>
         <PopularDestination navigation={navigation} />
         <Button
           title="Go to Login Page"

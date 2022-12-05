@@ -57,13 +57,13 @@ const MainApp = () => {
       <Tab.Screen
         name="Profile"
         component={Home}
-        options={({ navigation }) => ({
+        options={{
           tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
             <Feather name="user" color={color} size={size} />
           ),
           headerTitleAlign: "center",
-        })}
+        }}
       />
     </Tab.Navigator>
   );
