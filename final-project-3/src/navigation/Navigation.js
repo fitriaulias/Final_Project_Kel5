@@ -99,11 +99,31 @@ const Navigation = () => {
         component={MainApp}
         options={{ headerShown: false }}
       />
-      <HomeStack.Screen name="Bali" component={BaliSection} />
-      <HomeStack.Screen name="Yogyakarta" component={YogyakartaSection} />
-      <HomeStack.Screen name="Bandung" component={BandungSection} />
-      <HomeStack.Screen name="Detail" component={Detail} />
-      <HomeStack.Screen name="EditProfile" component={EditProfile} />
+      <HomeStack.Screen
+        name="Bali"
+        component={BaliSection}
+        options={{ title: "Hotels in Bali", headerTitleAlign: "center" }}
+      />
+      <HomeStack.Screen
+        name="Yogyakarta"
+        component={YogyakartaSection}
+        options={{ title: "Hotels in Yogyakarta", headerTitleAlign: "center" }}
+      />
+      <HomeStack.Screen
+        name="Bandung"
+        component={BandungSection}
+        options={{ title: "Hotels in Bandung", headerTitleAlign: "center" }}
+      />
+      <HomeStack.Screen
+        name="Detail"
+        component={Detail}
+        options={{ title: "Hotel's Detail", headerTitleAlign: "center" }}
+      />
+      <HomeStack.Screen
+        name="EditProfile"
+        component={EditProfile}
+        options={{ title: "Edit Profile", headerTitleAlign: "center" }}
+      />
     </HomeStack.Navigator>
   );
 };
