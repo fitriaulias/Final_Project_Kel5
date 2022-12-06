@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import { View, ScrollView, Text, StyleSheet } from "react-native";
+import { View, ScrollView, StyleSheet, Pressable } from "react-native";
 import axios from "axios";
 import CardList from "./CardList";
+import { useNavigation } from "@react-navigation/native";
 
-const ListHotel = (props) => {
+const ListHotel = ({ cityId }) => {
   const [list, setList] = useState([]);
+  const navigation = useNavigation();
 
   useEffect(() => {
     (async () => {
@@ -13,32 +15,35 @@ const ListHotel = (props) => {
         url: "https://priceline-com-provider.p.rapidapi.com/v1/hotels/search",
         params: {
           sort_order: "HDR",
-          location_id: `${props.cityId}`,
+          location_id: `${cityId}`,
           date_checkout: "2022-12-16",
           date_checkin: "2022-12-15",
-          star_rating_ids: "4.5,5.0",
+          star_rating_ids: "3.5,4.0,4.5,5.0",
         },
         headers: {
           "X-RapidAPI-Key":
-            "cdaf8fbff6msh3d9ffbb31afa015p19bde8jsn58122768197b",
+            "81c6fe816dmshfed85dd2e955dc2p1d032cjsn99a3925c7848",
           "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com",
         },
       })
         .then((response) => {
-          setList(response.data.hotels.slice(0, 10));
+          setList(response.data.hotels.slice(5, 15));
         })
         .catch((error) => console.log(error.response));
     })();
-  });
+  }, []);
 
   return (
     <View>
       <ScrollView>
-        <View>
-          <Text style={styles.text}>Hotels in {props.city}</Text>
-        </View>
-        {list?.map((hotel, index) => (
-          <CardList key={index} hotel={hotel} />
+        {list?.map((hotel) => (
+          <Pressable
+            onPress={() =>
+              navigation.navigate("Detail", { id: `${hotel.hotelId}` })
+            }
+          >
+            <CardList key={hotel.hotelId} hotel={hotel} />
+          </Pressable>
         ))}
       </ScrollView>
     </View>

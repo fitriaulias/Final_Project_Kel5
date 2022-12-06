@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import { Button } from "react-native-elements";
 import { useSelector } from "react-redux";
 import CardList from "../../components/CardList";
@@ -13,8 +13,14 @@ const Favorites = ({ navigation }) => {
       {favorite.length ? (
         <View>
           <ScrollView>
-            {favorite?.map((item) => (
-              <CardList key={item.name} hotel={item} />
+            {favorite?.map((hotel) => (
+              <Pressable
+                onPress={() =>
+                  navigation.navigate("Detail", { id: `${hotel.hotelId}` })
+                }
+              >
+                <CardList key={hotel.name} hotel={hotel} />
+              </Pressable>
             ))}
           </ScrollView>
         </View>

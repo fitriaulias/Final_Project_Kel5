@@ -1,6 +1,5 @@
 import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign, FontAwesome } from "@expo/vector-icons";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { favoriteHotel } from "../store/reducers/FavoriteSlice";
@@ -24,14 +23,16 @@ const CardList = ({ hotel }) => {
         </View>
       </View>
       <View style={styles.rowTwo}>
-        <Text style={styles.name}>{hotel.name}</Text>
-        <Text style={styles.location}>{hotel.location.address.cityName}</Text>
+        <Text style={styles.name}>{hotel?.name}</Text>
+        <Text style={styles.location}>
+          {hotel?.location?.address?.cityName}
+        </Text>
         <Text style={styles.rating}>
           <FontAwesome name="star" size={13} color="#ffa200" />
-          {hotel.starRating}
+          {hotel?.starRating}
         </Text>
         <View style={styles.prices}>
-          <Text style={styles.price}>${hotel.ratesSummary.minPrice}</Text>
+          <Text style={styles.price}>${hotel?.ratesSummary?.minPrice}</Text>
           <Text style={styles.night}>/ night</Text>
         </View>
         <View style={styles.heart}>

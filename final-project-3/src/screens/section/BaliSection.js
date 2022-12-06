@@ -4,7 +4,7 @@ import ListHotel from "../../components/ListHotel";
 const BaliSection = () => {
   return (
     <View>
-      <ListHotel cityId={3000040027} city="Bali" />
+      <ListHotel cityId={3000040027} />
     </View>
   );
 };
