@@ -1,8 +1,14 @@
-import { View, Image, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { favoriteHotel } from "../store/reducers/FavoriteSlice";
 
 const CardList = ({ hotel }) => {
+  const dispatch = useDispatch();
+  const favorite = useSelector((state) => state.favorite.hotels);
+
   return (
     <View style={styles.container}>
       <View style={styles.rowOne}>
@@ -29,7 +35,13 @@ const CardList = ({ hotel }) => {
           <Text style={styles.night}>/ night</Text>
         </View>
         <View style={styles.heart}>
-          <AntDesign name="hearto" size={24} color="#6c757d" />
+          <TouchableOpacity onPress={() => dispatch(favoriteHotel(hotel))}>
+            {favorite.find((inn) => inn.name === hotel.name) ? (
+              <AntDesign name="heart" size={24} color="#67b99a" />
+            ) : (
+              <AntDesign name="hearto" size={24} color="#6c757d" />
+            )}
+          </TouchableOpacity>
         </View>
       </View>
     </View>

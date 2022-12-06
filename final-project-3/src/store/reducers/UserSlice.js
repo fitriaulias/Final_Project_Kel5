@@ -7,6 +7,7 @@ const initialState = {
     email: "",
     gender: "",
     phone: "",
+    address: "",
   },
   isAuthenticated: false,
 };
@@ -21,9 +22,26 @@ export const user = createSlice({
     setAuth: (state, action) => {
       state.isAuthenticated = action.payload;
     },
+    setFirstname: (state, action) => {
+      state.user.firstName = action.payload;
+    },
+    setLastname: (state, action) => {
+      state.user.lastName = action.payload;
+    },
+    setAddress: (state, action) => {
+      state.user.address = action.payload;
+    },
   },
 });
 
-export const { setUser, setAuth } = user.actions;
+export const {
+  setUser,
+  setAuth,
+  setFirstname,
+  setLastname,
+  setGender,
+  setPhone,
+  setAddress,
+} = user.actions;
 
 export default user.reducer;

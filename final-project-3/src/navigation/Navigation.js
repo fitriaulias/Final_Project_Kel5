@@ -9,6 +9,8 @@ import YogyakartaSection from "../screens/section/YogyakartaSection";
 import BandungSection from "../screens/section/BandungSection";
 import Detail from "../screens/detail/Detail";
 import Favorites from "../screens/favorites/Favorites";
+import Profile from "../screens/profile/Profile";
+import EditProfile from "../screens/profile/EditProfile";
 
 const HomeStack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -56,7 +58,7 @@ const MainApp = () => {
       />
       <Tab.Screen
         name="Profile"
-        component={Home}
+        component={Profile}
         options={{
           tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
@@ -101,6 +103,7 @@ const Navigation = () => {
       <HomeStack.Screen name="Yogyakarta" component={YogyakartaSection} />
       <HomeStack.Screen name="Bandung" component={BandungSection} />
       <HomeStack.Screen name="Detail" component={Detail} />
+      <HomeStack.Screen name="EditProfile" component={EditProfile} />
     </HomeStack.Navigator>
   );
 };
