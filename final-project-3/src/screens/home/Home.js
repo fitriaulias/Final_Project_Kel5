@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Button, Text, ScrollView, StyleSheet, FlatList } from "react-native";
+import { View, Text, ScrollView, StyleSheet, FlatList } from "react-native";
 import PopularDestination from "../section/PopularDestination";
 import SearchCard from "../../components/SearchCard";
 
@@ -12,17 +12,13 @@ const Home = ({ navigation }) => {
         <View style={styles}>
           <FlatList
             renderItem={({ item }) => {
-              return <Card data={item} />
+              return <Card data={item} />;
             }}
-            keyExtractor={item => item.id}
+            keyExtractor={(item) => item.id}
             ListHeaderComponent={() => <SearchCard />}
           />
         </View>
         <PopularDestination navigation={navigation} />
-        <Button
-          title="Go to Login Page"
-          onPress={() => navigation.navigate("Login")}
-        />
       </ScrollView>
     </View>
   );
