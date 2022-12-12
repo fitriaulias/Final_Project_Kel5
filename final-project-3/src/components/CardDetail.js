@@ -17,15 +17,15 @@ const CardDetail = ({ hotel }) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
-        {/* <Image
-          source={{ uri: `${hotel?.images[0]?.imageUrl}` }}
+        <Image
+          source={{ uri: `${hotel?.thumbnailUrl}` }}
           style={{
             width: "100%",
             height: 250,
             borderRadius: 8,
             marginBottom: 10,
           }}
-        /> */}
+        />
       </View>
       <View style={styles.containerName}>
         <Text style={styles.name}>{hotel?.name}</Text>

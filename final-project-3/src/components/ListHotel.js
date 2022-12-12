@@ -22,7 +22,7 @@ const ListHotel = ({ cityId }) => {
         },
         headers: {
           "X-RapidAPI-Key":
-            "ecff512fccmsh15738bc8b7d5cc9p103495jsna1ab4b4f0c97",
+            "d028c0810cmsh55a093d5e64ae64p1a3554jsn07f01410505d",
           "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com",
         },
       })
@@ -36,13 +36,13 @@ const ListHotel = ({ cityId }) => {
   return (
     <View>
       <ScrollView>
-        {list?.map((hotel) => (
+        {list?.map((hotel, index) => (
           <Pressable
             onPress={() =>
               navigation.navigate("Detail", { id: `${hotel.hotelId}` })
             }
           >
-            <CardList key={hotel.hotelId} hotel={hotel} />
+            <CardList key={index} hotel={hotel} />
           </Pressable>
         ))}
       </ScrollView>

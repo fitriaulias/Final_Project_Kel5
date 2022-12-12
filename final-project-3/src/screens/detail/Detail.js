@@ -15,7 +15,7 @@ const Detail = ({ route }) => {
         params: { hotel_id: id },
         headers: {
           "X-RapidAPI-Key":
-            "ecff512fccmsh15738bc8b7d5cc9p103495jsna1ab4b4f0c97",
+            "d028c0810cmsh55a093d5e64ae64p1a3554jsn07f01410505d",
           "X-RapidAPI-Host": "priceline-com-provider.p.rapidapi.com",
         },
       })
