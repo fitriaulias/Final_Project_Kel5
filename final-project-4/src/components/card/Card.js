@@ -14,7 +14,7 @@ const Cards = ({movie}) => {
                     alt="card_img"
                 />
                 <div className="overlay">
-                    <div className="title">{movie?movie.original_title:""}</div>
+                    <div className="card-title">{movie?movie.original_title:""}</div>
                     <div className="rating">
                         {movie?movie.vote_average:""}
                     </div>

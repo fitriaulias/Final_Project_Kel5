@@ -6,6 +6,7 @@ import Detail from "./pages/detail/Detail";
 import Navbar from "./components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/footer/Footer";
+import About from "./pages/about/About"
 
 function NoMatch() {
   let location = useLocation();
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />

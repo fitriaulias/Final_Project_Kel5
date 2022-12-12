@@ -56,6 +56,20 @@ const Detail = () => {
                         <div className="synopsisText">Synopsis</div>
                         <div>{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
                     </div>
+                    <div className="link">
+                        {
+                            currentMovieDetail && currentMovieDetail.imdb_id && 
+                            <a 
+                                href={"https://www.imdb.com/title/" + currentMovieDetail.imdb_id} 
+                                target="blank" style={{textDecoration: "none"}}>
+                                    <p><span className="movie-button">
+                                            Movie Trailer
+                                            <i className="newTab fas fa-external-link-alt"></i>
+                                        </span>
+                                    </p>
+                            </a>
+                        }
+                    </div>
                     
                 </div>
             </div>
