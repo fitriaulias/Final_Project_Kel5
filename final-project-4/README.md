@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://github.com/fitriaulias/Final_Project_Kel5/tree/main/final-project-4">
+    <!-- <img src="assets/travelin.png" alt="Logo" height="90"> -->
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">MoviesInd</h3>
 
-## Available Scripts
+  <p align="center">
+    Movies Ind adalah website yang memuat informasi tentang film, series, dan drama dari seluruh dunia. Website ini memiliki fitur yang menampilkan popular movies, dan top rated movies, serta terdapat juga fitur pencarian dimana pengguna dapat mencari film berdasarkan judul yang diinginkan.
+    <br />
+    <a href="https://github.com/fitriaulias/Final_Project_Kel5/tree/main/final-project-4"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <p>Final Project 4 oleh Kelompok 5</p>
+  </p>
+</div>
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Daftar Isi</summary>
+  <ol>
+    <li>
+      <a href="#status-mentoring">Status Mentoring</a>
+    </li>
+    <li>
+      <a href="#anggota-kelomok">Anggota Kelompok</a>
+    </li>
+    <li>
+      <a href="#tentang-project">Tentang Project</a>
+      <ul>
+        <li><a href="#framework">Frameworks/Libraries</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#instalasi-aplikasi">Instalasi Aplikasi</a></li>
+        <li><a href="#cara-penggunaan-aplikasi">Cara Penggunaan Aplikasi</a></li>
+      </ul>
+    </li>
+    <li><a href="#presentasi">Presentasi</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- STATUS MENTORING -->
 
-### `npm test`
+## Status Mentoring
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mentoring **akan dilaksanakan** pada:
 
-### `npm run build`
+- :date: Tanggal dan waktu: 12 Desember 2022, 13.00 WIB
+- Instruktur: Pak Arif Setiawan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- MEMBER GROUP -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Anggota Kelompok
 
-### `npm run eject`
+- I Putu Gede Maysa Putra (RCTN-KS05-022)
+- Dwi Samsiarto (RCTN-KS05-023)
+- Fitri Aulia S. (RCTN-KS05-024)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ABOUT THE PROJECT -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tentang Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+MoviesInd adalah aplikasi yang memuat informasi tentang film, berbagai series. Fitur yang terdapat di aplikasi ini diantaranya:
 
-## Learn More
+- Search
+- Section Popular Place
+- Section Top Rated Movies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API yang digunakan:
+[OMDb API](http://www.omdbapi.com/) by Brian Fritz
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mockup
 
-### Code Splitting
+Cek mockup kami [disini!](https://www.figma.com/file/OU0BsnkFoj1YbbZoUYrS6x/Hotel's-%26-Destination?node-id=0%3A1&t=qvC6IMuQgkSvWZnz-1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Frameworks/Libraries
 
-### Analyzing the Bundle Size
+Daftar Frameworks/libraries yang kami gunakan:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React
+- React router dom
+- Axios
+- React-icons
+- React-bootstrap & bootstrap
 
-### Making a Progressive Web App
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- GETTING STARTED -->
 
-### Advanced Configuration
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Untuk menggunakan aplikasi MoviesInd, langkah pertama yang harus dilakukan adalah instalasi aplikasi.
 
-### Deployment
+### Instalasi Aplikasi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Berikut langkah-langkah untuk instalasi aplikasi MoviesInd.
 
-### `npm run build` fails to minify
+1. Clone repository
+   ```sh
+   git clone https://github.com/fitriaulias/Final_Project_Kel5.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Jalankan aplikasi
+   ```sh
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br/>
+
+## Presentasi
+
+1. PowerPoint di [google drive](https://drive.google.com/file/d/1qRFN5cS4fcPs8e9zEScjrcTAG7lPWdx7/view?usp=sharing)
+2. Mockup
+3. Management progress member di [Trello](https://trello.com/b/FCtB4Tdi/final-project-4-kelompok-5)
+4. <details>
+   <summary>Coding</summary>
+   <ol type="1">
+       <li>Search</li>
+       <li>Movies</li>
+       <li>About</li>
+       <li>Navigation</li>
+       <li>Footer</li>
+   </ol>
+   </details>
+5. Demo aplikasi
+
+<br/>
