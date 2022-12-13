@@ -10,10 +10,6 @@ const Popular = () => {
 
     useEffect(() => {
         getData()
-    }, [])
-
-    useEffect(() => {
-        getData()
     }, [type])
 
     const getData = () => {
@@ -28,7 +24,7 @@ const Popular = () => {
             <div className="list-card">
                 {
                     movieList.map(movie => (
-                        <Cards movie={movie} />
+                        <Cards key={movie.id} movie={movie} />
                     ))
                 }
             </div>
