@@ -6,10 +6,12 @@ import Detail from "./pages/detail/Detail";
 import Navbar from "./components/navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/footer/Footer";
+import { useState } from "react";
+import Search from "./pages/search/Search";
 
 function NoMatch() {
   let location = useLocation();
-
+  
   return (
     <div className="vh-100 d-flex">
       <Stack className="m-auto align-items-center">
@@ -23,13 +25,18 @@ function NoMatch() {
 }
 
 function App() {
+  let [search, setSearch] = useState()
+  // setSearch("house")
+  // let search= ""
+  
   return (
     <div className="App">
-      <Navbar />
+      <Navbar setSearch={setSearch} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
         <Route path="*" element={<NoMatch />} />
+        <Route path="/search" element={<Search search={search}/>}/>
       </Routes>
       <Footer />
     </div>
