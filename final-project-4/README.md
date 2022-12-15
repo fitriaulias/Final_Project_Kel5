@@ -83,7 +83,7 @@ API yang digunakan:
 
 ### Mockup
 
-Cek mockup kami [disini!](https://www.figma.com/file/OU0BsnkFoj1YbbZoUYrS6x/Hotel's-%26-Destination?node-id=0%3A1&t=qvC6IMuQgkSvWZnz-1)
+Cek mockup kami [disini!](https://www.figma.com/file/9lKaEKzmK3Xq0mM9COffvn/Untitled?node-id=0%3A1&t=RwjdcUQWRO2UAqHV-1)
 
 ### Frameworks/Libraries
 
