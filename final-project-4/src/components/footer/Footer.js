@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import "./Styles.css";
+import { MdOutlineMovieFilter } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="row">
           <div className="col">
             <Navbar.Brand href="/">
-              {/* <img src={brand} alt="Home" className="brand-image" /> */}
+              <MdOutlineMovieFilter size={100} />
             </Navbar.Brand>
           </div>
 
@@ -40,7 +41,7 @@ const Footer = () => {
           <div className="col">
             <h5>Company</h5>
             <ul className="list-unstyled">
-              <Nav.Link as={Link} to="/aboutus">
+              <Nav.Link as={Link} to="/about">
                 About Us
               </Nav.Link>
               <Nav.Link type="link" href="mailto:support@movieind.com">

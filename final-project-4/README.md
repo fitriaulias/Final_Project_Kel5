@@ -60,11 +60,11 @@ Mentoring **akan dilaksanakan** pada:
 
 <!-- MEMBER GROUP -->
 
-## Anggota Kelompok
+## Contributors
 
+- Fitri Aulia S. (RCTN-KS-024) (Leader)
 - I Putu Gede Maysa Putra (RCTN-KS05-022)
 - Dwi Samsiarto (RCTN-KS05-023)
-- Fitri Aulia S. (RCTN-KS05-024)
 
 <br/>
 
@@ -75,11 +75,11 @@ Mentoring **akan dilaksanakan** pada:
 MoviesInd adalah aplikasi yang memuat informasi tentang film, berbagai series. Fitur yang terdapat di aplikasi ini diantaranya:
 
 - Search
-- Section Popular Place
+- Section Popular Movies
 - Section Top Rated Movies
 
 API yang digunakan:
-[OMDb API](http://www.omdbapi.com/) by Brian Fritz
+[TMDB API](https://www.themoviedb.org/documentation/api)
 
 ### Mockup
 
